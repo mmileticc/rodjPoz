@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pozivnica za rođendan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#welcome" class="nav-link">Početna</a></li>
+                <li><a href="#details" class="nav-link">Detalji</a></li>
+                <li><a href="#location" class="nav-link">Lokacija</a></li>
+                <li><a href="#rsvp" class="nav-link">RSVP</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="welcome">
+        <div class="highlight">
+            <h1>Pozivam te na moj rođendan!</h1>
+            <p>Dragi prijatelju, sa velikim zadovoljstvom te pozivam da zajedno proslavimo moj poseban dan. Biće ovo proslava za pamćenje!</p>
+        </div>
+    </section>
+
+    <section id="details">
+        <h2>Detalji proslave</h2>
+        <div class="details-container">
+            <div class="detail-card">
+                <h3>Datum</h3>
+                <p>Subota, 12. april 2025.</p>
+            </div>
+            <div class="detail-card">
+                <h3>Vreme</h3>
+                <p>Od 20:00 časova</p>
+            </div>
+            <div class="detail-card">
+                <h3>Dress Code</h3>
+                <p>Smart Casual</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="location">
+        <h2>Kako do nas</h2>
+        <p>Proslava će biti održana na sledećoj lokaciji:</p>
+        <div class="map-container">
+            <!-- <iframe id="map" src="" allowfullscreen="" loading="lazy"></iframe> -->
+            <iframe id = "map" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1346.7359126598392!2d20.500953471196734!3d44.746545997443036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDTCsDQ0JzQ3LjYiTiAyMMKwMzAnMDYuMiJF!5e1!3m2!1ssr!2srs!4v1742418357602!5m2!1ssr!2srs"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    </section>
+
+    <section id="rsvp">
+        <h2>Potvrdi dolazak</h2>
+        <div class="rsvp-form">
+            <div class="form-group">
+                <label for="name">Ime i prezime</label>
+                <input type="text" id="name" placeholder="Unesite svoje ime i prezime">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Unesite svoj email">
+            </div>
+            <div class="form-group">
+                <label for="status">Status</label>
+                <select id="status">
+                    <option value="coming">Dolaziću</option>
+                    <option value="maybe">Možda ću doći</option>
+                    <option value="not-coming">Ne mogu da dođem</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Poruka (opciono)</label>
+                <input type="text" id="message" placeholder="Unesite poruku ili napomenu">
+            </div>
+            <button id="submit-rsvp">Potvrdi</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Rođendanska proslava</p>
+        <div class="admin-link">
+            <a href="admin.html">Admin panel</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
