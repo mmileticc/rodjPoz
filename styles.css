@@ -10,12 +10,17 @@ body {
     color: #333;
 }
 
+p {
+    font-size: 1.3rem;
+}
+
+
 /* HEADER */
 header {
     background-color: #4a6fa5;
     color: white;
     padding: 1rem;
-    position: fixed;
+    position: sticky;
     width: 100%;
     top: 0;
     z-index: 1000;
@@ -38,6 +43,7 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-size: 1.5rem;
     padding: 0.5rem;
     font-weight: bold;
     transition: all 0.3s ease;
@@ -64,8 +70,8 @@ section {
     background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
 }
 
-#welcome h1 {
-    font-size: 2.5rem;
+#welcome .highlight h1 {
+    font-size: 3.5rem;
     margin-bottom: 1rem;
     color: #333;
 }
@@ -86,8 +92,8 @@ section {
 }
 
 #details h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
 }
 
 .details-container {
@@ -111,9 +117,11 @@ section {
 }
 
 .detail-card h3 {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
     color: #4a6fa5;
 }
+
 
 /* LOKACIJA */
 #location {
@@ -121,8 +129,8 @@ section {
 }
 
 #location h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
 }
 
 .map-container {
